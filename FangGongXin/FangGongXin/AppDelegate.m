@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import <UMSocialCore/UMSocialCore.h>
+#import "LoginRegisterController.h"
+#import "FGXTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +18,37 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //打开友盟调试日志
+    [[UMSocialManager defaultManager] openLog:YES];
+    //设置友盟appKey
+    [[UMSocialManager defaultManager] setUmSocialAppkey:XM_Um_Appkey];
+    //设置微信的appKey和appSecret
+    [self configUSharePlatforms];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //主界面
+//    LoginRegisterController *LogReg = [[LoginRegisterController alloc]init];
+    FGXTabBarController *taBC = [FGXTabBarController FGXWithTabBarController];
+    self.window.rootViewController = taBC;
+    [self.window makeKeyAndVisible];
     return YES;
+}
+- (void)configUSharePlatforms
+{
+    /* 设置微信的appKey和appSecret */
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:XM_Wx_Appkey appSecret:XM_Wx_AppSecret redirectURL:XM_Um_redirectURL];
+    
+}
+//回调系统
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation{
+    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
+    if (!result) {
+        // 其他如支付等SDK的回调
+    }
+    return result;
 }
 
 

@@ -1,0 +1,41 @@
+//
+//  fanggongxin.pch
+//  FangGongXin
+//
+//  Created by Apple on 2017/9/19.
+//  Copyright © 2017年 YaLeTeCh. All rights reserved.
+//
+
+#ifndef fanggongxin_pch
+#define fanggongxin_pch
+
+
+#define kScreenW  [UIScreen mainScreen].bounds.size.width
+#define kScreenH  [UIScreen mainScreen].bounds.size.height
+#define tableHeaderViewH   160
+
+
+//友盟Appkey
+#define XM_Um_Appkey      @"59c1e22a04e20521ef000012"
+//友盟redirectURL(回调地址)
+#define XM_Um_redirectURL @"http://mobile.umeng.com/social"
+
+//高德地图Appkey
+#define XM_GDMap_Appkey   @"ec5e6824dfcdc484e9c5b742560edec3"
+//云图key ：58d215ec305a2a68100c996e
+#define XM_yuntu_key      @"58d215ec305a2a68100c996e"
+
+//微信Appkey
+#define XM_Wx_Appkey      @"wx06916fef311bd449"
+//微信AppSecret
+#define XM_Wx_AppSecret   @"5c7b7b6b66890572ceab164db75f012a"
+
+
+
+
+#define MainStoryboard [UIStoryboard storyboardWithName: @"Main" bundle: nil]
+
+#import <WebKit/WebKit.h>
+
+
+#endif /* fanggongxin_pch */

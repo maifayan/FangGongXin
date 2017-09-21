@@ -15,6 +15,27 @@
 		1882D3C41F70C0BA001812E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882D3C21F70C0BA001812E3 /* LaunchScreen.storyboard */; };
 		1882D3CF1F70C0BA001812E3 /* FangGongXinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3CE1F70C0BA001812E3 /* FangGongXinTests.m */; };
 		1882D3DA1F70C0BA001812E3 /* FangGongXinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3D91F70C0BA001812E3 /* FangGongXinUITests.m */; };
+		1882D3F51F70EF6E001812E3 /* LoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3F41F70EF6E001812E3 /* LoginRegisterController.m */; };
+		18B518061F7246C500459E4E /* FGXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518051F7246C500459E4E /* FGXTabBarController.m */; };
+		18B518091F7246E900459E4E /* FGXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518081F7246E900459E4E /* FGXNavigationController.m */; };
+		18B5181C1F724FD500459E4E /* FGXHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5181B1F724FD500459E4E /* FGXHomeController.m */; };
+		18B5181F1F72514900459E4E /* FGXMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5181E1F72514900459E4E /* FGXMessageController.m */; };
+		18B518221F72518A00459E4E /* FGXAgentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518211F72518A00459E4E /* FGXAgentController.m */; };
+		18E4D8C51F739FDB007B863E /* FGXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8AA1F739FDB007B863E /* FGXMeController.m */; };
+		18E4D8C61F739FDB007B863E /* FGXAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8AE1F739FDB007B863E /* FGXAboutController.m */; };
+		18E4D8C71F739FDB007B863E /* FGXSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8B01F739FDB007B863E /* FGXSettingController.m */; };
+		18E4D8C81F739FDB007B863E /* FGXSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E4D8B11F739FDB007B863E /* FGXSettingController.xib */; };
+		18E4D8C91F739FDB007B863E /* FGXPersonalInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8B41F739FDB007B863E /* FGXPersonalInfoController.m */; };
+		18E4D8CA1F739FDB007B863E /* FGXSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8B81F739FDB007B863E /* FGXSettingModel.m */; };
+		18E4D8CB1F739FDB007B863E /* FGXPersonalInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8BB1F739FDB007B863E /* FGXPersonalInfoModel.m */; };
+		18E4D8CC1F739FDB007B863E /* FGXSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8BF1F739FDB007B863E /* FGXSettingCell.m */; };
+		18E4D8CD1F739FDB007B863E /* FGXSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E4D8C01F739FDB007B863E /* FGXSettingCell.xib */; };
+		18E4D8CE1F739FDB007B863E /* FGXPersonalInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8C31F739FDB007B863E /* FGXPersonalInfoCell.m */; };
+		18E4D8CF1F739FDB007B863E /* FGXPersonalInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E4D8C41F739FDB007B863E /* FGXPersonalInfoCell.xib */; };
+		18E4D8D41F73B0F2007B863E /* FGXContractController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8D31F73B0F2007B863E /* FGXContractController.m */; };
+		18E4D8D81F73B1DE007B863E /* FGXProcessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8D71F73B1DE007B863E /* FGXProcessController.m */; };
+		18E4D8E31F73BE70007B863E /* FGXRealNameAuthenticationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8E21F73BE70007B863E /* FGXRealNameAuthenticationController.m */; };
+		41ADDD5E0250958AD567B980 /* libPods-FangGongXin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3688071B866E61A8427FC3 /* libPods-FangGongXin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +72,47 @@
 		1882D3D51F70C0BA001812E3 /* FangGongXinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FangGongXinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1882D3D91F70C0BA001812E3 /* FangGongXinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FangGongXinUITests.m; sourceTree = "<group>"; };
 		1882D3DB1F70C0BA001812E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1882D3F31F70EF6E001812E3 /* LoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRegisterController.h; sourceTree = "<group>"; };
+		1882D3F41F70EF6E001812E3 /* LoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRegisterController.m; sourceTree = "<group>"; };
+		1882D3F61F7118B5001812E3 /* fanggongxin.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fanggongxin.pch; sourceTree = "<group>"; };
+		18B518041F7246C500459E4E /* FGXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXTabBarController.h; sourceTree = "<group>"; };
+		18B518051F7246C500459E4E /* FGXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXTabBarController.m; sourceTree = "<group>"; };
+		18B518071F7246E900459E4E /* FGXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXNavigationController.h; sourceTree = "<group>"; };
+		18B518081F7246E900459E4E /* FGXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXNavigationController.m; sourceTree = "<group>"; };
+		18B5181A1F724FD500459E4E /* FGXHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXHomeController.h; sourceTree = "<group>"; };
+		18B5181B1F724FD500459E4E /* FGXHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXHomeController.m; sourceTree = "<group>"; };
+		18B5181D1F72514900459E4E /* FGXMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMessageController.h; sourceTree = "<group>"; };
+		18B5181E1F72514900459E4E /* FGXMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMessageController.m; sourceTree = "<group>"; };
+		18B518201F72518A00459E4E /* FGXAgentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAgentController.h; sourceTree = "<group>"; };
+		18B518211F72518A00459E4E /* FGXAgentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAgentController.m; sourceTree = "<group>"; };
+		18E4D8A91F739FDB007B863E /* FGXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMeController.h; sourceTree = "<group>"; };
+		18E4D8AA1F739FDB007B863E /* FGXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMeController.m; sourceTree = "<group>"; };
+		18E4D8AD1F739FDB007B863E /* FGXAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAboutController.h; sourceTree = "<group>"; };
+		18E4D8AE1F739FDB007B863E /* FGXAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAboutController.m; sourceTree = "<group>"; };
+		18E4D8AF1F739FDB007B863E /* FGXSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXSettingController.h; sourceTree = "<group>"; };
+		18E4D8B01F739FDB007B863E /* FGXSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXSettingController.m; sourceTree = "<group>"; };
+		18E4D8B11F739FDB007B863E /* FGXSettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGXSettingController.xib; sourceTree = "<group>"; };
+		18E4D8B31F739FDB007B863E /* FGXPersonalInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXPersonalInfoController.h; sourceTree = "<group>"; };
+		18E4D8B41F739FDB007B863E /* FGXPersonalInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXPersonalInfoController.m; sourceTree = "<group>"; };
+		18E4D8B71F739FDB007B863E /* FGXSettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXSettingModel.h; sourceTree = "<group>"; };
+		18E4D8B81F739FDB007B863E /* FGXSettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXSettingModel.m; sourceTree = "<group>"; };
+		18E4D8BA1F739FDB007B863E /* FGXPersonalInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXPersonalInfoModel.h; sourceTree = "<group>"; };
+		18E4D8BB1F739FDB007B863E /* FGXPersonalInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXPersonalInfoModel.m; sourceTree = "<group>"; };
+		18E4D8BE1F739FDB007B863E /* FGXSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXSettingCell.h; sourceTree = "<group>"; };
+		18E4D8BF1F739FDB007B863E /* FGXSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXSettingCell.m; sourceTree = "<group>"; };
+		18E4D8C01F739FDB007B863E /* FGXSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGXSettingCell.xib; sourceTree = "<group>"; };
+		18E4D8C21F739FDB007B863E /* FGXPersonalInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXPersonalInfoCell.h; sourceTree = "<group>"; };
+		18E4D8C31F739FDB007B863E /* FGXPersonalInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXPersonalInfoCell.m; sourceTree = "<group>"; };
+		18E4D8C41F739FDB007B863E /* FGXPersonalInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGXPersonalInfoCell.xib; sourceTree = "<group>"; };
+		18E4D8D21F73B0F2007B863E /* FGXContractController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXContractController.h; sourceTree = "<group>"; };
+		18E4D8D31F73B0F2007B863E /* FGXContractController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXContractController.m; sourceTree = "<group>"; };
+		18E4D8D61F73B1DE007B863E /* FGXProcessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXProcessController.h; sourceTree = "<group>"; };
+		18E4D8D71F73B1DE007B863E /* FGXProcessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXProcessController.m; sourceTree = "<group>"; };
+		18E4D8E11F73BE70007B863E /* FGXRealNameAuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXRealNameAuthenticationController.h; sourceTree = "<group>"; };
+		18E4D8E21F73BE70007B863E /* FGXRealNameAuthenticationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXRealNameAuthenticationController.m; sourceTree = "<group>"; };
+		27242A9569848444965DCDA7 /* Pods-FangGongXin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangGongXin.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangGongXin/Pods-FangGongXin.release.xcconfig"; sourceTree = "<group>"; };
+		5B3688071B866E61A8427FC3 /* libPods-FangGongXin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FangGongXin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA49F0B620F064559F3899C /* Pods-FangGongXin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangGongXin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangGongXin/Pods-FangGongXin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41ADDD5E0250958AD567B980 /* libPods-FangGongXin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +148,8 @@
 				1882D3CD1F70C0BA001812E3 /* FangGongXinTests */,
 				1882D3D81F70C0BA001812E3 /* FangGongXinUITests */,
 				1882D3B21F70C0BA001812E3 /* Products */,
+				83A2776203E5544CA788CBF2 /* Pods */,
+				99D981CC02DE2D2B65ACD10B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +171,8 @@
 				1882D3BA1F70C0BA001812E3 /* ViewController.h */,
 				1882D3BB1F70C0BA001812E3 /* ViewController.m */,
 				1882D3BD1F70C0BA001812E3 /* Main.storyboard */,
+				1882D3F61F7118B5001812E3 /* fanggongxin.pch */,
+				1882D3E71F70EF13001812E3 /* Classes */,
 				1882D3C01F70C0BA001812E3 /* Assets.xcassets */,
 				1882D3C21F70C0BA001812E3 /* LaunchScreen.storyboard */,
 				1882D3C51F70C0BA001812E3 /* Info.plist */,
@@ -140,6 +207,419 @@
 			path = FangGongXinUITests;
 			sourceTree = "<group>";
 		};
+		1882D3E71F70EF13001812E3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8DA1F73B805007B863E /* Other */,
+				18E4D8A71F739FDB007B863E /* Me */,
+				18B518161F72486500459E4E /* Home */,
+				18B518121F72485C00459E4E /* Message */,
+				18B5180E1F72485000459E4E /* Agent */,
+				1882D3E81F70EF13001812E3 /* LogReg */,
+				1882D3EC1F70EF13001812E3 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1882D3E81F70EF13001812E3 /* LogReg */ = {
+			isa = PBXGroup;
+			children = (
+				1882D3E91F70EF13001812E3 /* Controller */,
+				1882D3EA1F70EF13001812E3 /* Model */,
+				1882D3EB1F70EF13001812E3 /* View */,
+			);
+			path = LogReg;
+			sourceTree = "<group>";
+		};
+		1882D3E91F70EF13001812E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1882D3F31F70EF6E001812E3 /* LoginRegisterController.h */,
+				1882D3F41F70EF6E001812E3 /* LoginRegisterController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1882D3EA1F70EF13001812E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1882D3EB1F70EF13001812E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1882D3EC1F70EF13001812E3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1882D3ED1F70EF13001812E3 /* Category */,
+				1882D3EE1F70EF13001812E3 /* Const */,
+				1882D3EF1F70EF13001812E3 /* Controller */,
+				1882D3F01F70EF13001812E3 /* Lib */,
+				1882D3F11F70EF13001812E3 /* Model */,
+				1882D3F21F70EF13001812E3 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1882D3ED1F70EF13001812E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1882D3EE1F70EF13001812E3 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		1882D3EF1F70EF13001812E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B518041F7246C500459E4E /* FGXTabBarController.h */,
+				18B518051F7246C500459E4E /* FGXTabBarController.m */,
+				18B518071F7246E900459E4E /* FGXNavigationController.h */,
+				18B518081F7246E900459E4E /* FGXNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1882D3F01F70EF13001812E3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		1882D3F11F70EF13001812E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1882D3F21F70EF13001812E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B5180E1F72485000459E4E /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				18B5180F1F72485000459E4E /* Controller */,
+				18B518101F72485000459E4E /* Model */,
+				18B518111F72485000459E4E /* View */,
+			);
+			path = Agent;
+			sourceTree = "<group>";
+		};
+		18B5180F1F72485000459E4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B518201F72518A00459E4E /* FGXAgentController.h */,
+				18B518211F72518A00459E4E /* FGXAgentController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B518101F72485000459E4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B518111F72485000459E4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B518121F72485C00459E4E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				18B518131F72485C00459E4E /* Controller */,
+				18B518141F72485C00459E4E /* Model */,
+				18B518151F72485C00459E4E /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		18B518131F72485C00459E4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B5181D1F72514900459E4E /* FGXMessageController.h */,
+				18B5181E1F72514900459E4E /* FGXMessageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B518141F72485C00459E4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B518151F72485C00459E4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B518161F72486500459E4E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18B518171F72486500459E4E /* Controller */,
+				18B518181F72486500459E4E /* Model */,
+				18B518191F72486500459E4E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18B518171F72486500459E4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B5181A1F724FD500459E4E /* FGXHomeController.h */,
+				18B5181B1F724FD500459E4E /* FGXHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B518181F72486500459E4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B518191F72486500459E4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18E4D8A71F739FDB007B863E /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8A81F739FDB007B863E /* Controller */,
+				18E4D8B51F739FDB007B863E /* Model */,
+				18E4D8BC1F739FDB007B863E /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		18E4D8A81F739FDB007B863E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8D91F73B540007B863E /* Perfect */,
+				18E4D8D51F73B1C9007B863E /* Process */,
+				18E4D8D11F73B090007B863E /* Contract */,
+				18E4D8A91F739FDB007B863E /* FGXMeController.h */,
+				18E4D8AA1F739FDB007B863E /* FGXMeController.m */,
+				18E4D8AB1F739FDB007B863E /* SettingController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18E4D8AB1F739FDB007B863E /* SettingController */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8AC1F739FDB007B863E /* AboutController */,
+				18E4D8AF1F739FDB007B863E /* FGXSettingController.h */,
+				18E4D8B01F739FDB007B863E /* FGXSettingController.m */,
+				18E4D8B11F739FDB007B863E /* FGXSettingController.xib */,
+				18E4D8B21F739FDB007B863E /* PersonalController */,
+			);
+			path = SettingController;
+			sourceTree = "<group>";
+		};
+		18E4D8AC1F739FDB007B863E /* AboutController */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8AD1F739FDB007B863E /* FGXAboutController.h */,
+				18E4D8AE1F739FDB007B863E /* FGXAboutController.m */,
+			);
+			path = AboutController;
+			sourceTree = "<group>";
+		};
+		18E4D8B21F739FDB007B863E /* PersonalController */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8B31F739FDB007B863E /* FGXPersonalInfoController.h */,
+				18E4D8B41F739FDB007B863E /* FGXPersonalInfoController.m */,
+			);
+			path = PersonalController;
+			sourceTree = "<group>";
+		};
+		18E4D8B51F739FDB007B863E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8B61F739FDB007B863E /* SettingModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18E4D8B61F739FDB007B863E /* SettingModel */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8B71F739FDB007B863E /* FGXSettingModel.h */,
+				18E4D8B81F739FDB007B863E /* FGXSettingModel.m */,
+				18E4D8B91F739FDB007B863E /* PersonalModel */,
+			);
+			path = SettingModel;
+			sourceTree = "<group>";
+		};
+		18E4D8B91F739FDB007B863E /* PersonalModel */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8BA1F739FDB007B863E /* FGXPersonalInfoModel.h */,
+				18E4D8BB1F739FDB007B863E /* FGXPersonalInfoModel.m */,
+			);
+			path = PersonalModel;
+			sourceTree = "<group>";
+		};
+		18E4D8BC1F739FDB007B863E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8BD1F739FDB007B863E /* SettingCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18E4D8BD1F739FDB007B863E /* SettingCell */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8BE1F739FDB007B863E /* FGXSettingCell.h */,
+				18E4D8BF1F739FDB007B863E /* FGXSettingCell.m */,
+				18E4D8C01F739FDB007B863E /* FGXSettingCell.xib */,
+				18E4D8C11F739FDB007B863E /* PersonalCell */,
+			);
+			path = SettingCell;
+			sourceTree = "<group>";
+		};
+		18E4D8C11F739FDB007B863E /* PersonalCell */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8C21F739FDB007B863E /* FGXPersonalInfoCell.h */,
+				18E4D8C31F739FDB007B863E /* FGXPersonalInfoCell.m */,
+				18E4D8C41F739FDB007B863E /* FGXPersonalInfoCell.xib */,
+			);
+			path = PersonalCell;
+			sourceTree = "<group>";
+		};
+		18E4D8D11F73B090007B863E /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8D21F73B0F2007B863E /* FGXContractController.h */,
+				18E4D8D31F73B0F2007B863E /* FGXContractController.m */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		18E4D8D51F73B1C9007B863E /* Process */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8D61F73B1DE007B863E /* FGXProcessController.h */,
+				18E4D8D71F73B1DE007B863E /* FGXProcessController.m */,
+			);
+			path = Process;
+			sourceTree = "<group>";
+		};
+		18E4D8D91F73B540007B863E /* Perfect */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Perfect;
+			sourceTree = "<group>";
+		};
+		18E4D8DA1F73B805007B863E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8DB1F73B805007B863E /* Controller */,
+				18E4D8DC1F73B805007B863E /* Model */,
+				18E4D8DD1F73B805007B863E /* View */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18E4D8DB1F73B805007B863E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8DE1F73B8AF007B863E /* AgentCertification */,
+				18E4D8DF1F73B8AF007B863E /* PhoneBinding */,
+				18E4D8E01F73B8AF007B863E /* Real-nameAuthentication */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18E4D8DC1F73B805007B863E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18E4D8DD1F73B805007B863E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18E4D8DE1F73B8AF007B863E /* AgentCertification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AgentCertification;
+			sourceTree = "<group>";
+		};
+		18E4D8DF1F73B8AF007B863E /* PhoneBinding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhoneBinding;
+			sourceTree = "<group>";
+		};
+		18E4D8E01F73B8AF007B863E /* Real-nameAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				18E4D8E11F73BE70007B863E /* FGXRealNameAuthenticationController.h */,
+				18E4D8E21F73BE70007B863E /* FGXRealNameAuthenticationController.m */,
+			);
+			path = "Real-nameAuthentication";
+			sourceTree = "<group>";
+		};
+		83A2776203E5544CA788CBF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BA49F0B620F064559F3899C /* Pods-FangGongXin.debug.xcconfig */,
+				27242A9569848444965DCDA7 /* Pods-FangGongXin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99D981CC02DE2D2B65ACD10B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B3688071B866E61A8427FC3 /* libPods-FangGongXin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +627,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1882D3DE1F70C0BA001812E3 /* Build configuration list for PBXNativeTarget "FangGongXin" */;
 			buildPhases = (
+				0B369443EF928B40713D1519 /* [CP] Check Pods Manifest.lock */,
 				1882D3AD1F70C0BA001812E3 /* Sources */,
 				1882D3AE1F70C0BA001812E3 /* Frameworks */,
 				1882D3AF1F70C0BA001812E3 /* Resources */,
+				4531105F8EC67266F4A4676E /* [CP] Embed Pods Frameworks */,
+				152D2882674E3CF0B29B9B7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +685,7 @@
 		1882D3A91F70C0BA001812E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FGX;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = YaLeTeCh;
 				TargetAttributes = {
@@ -249,8 +733,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E4D8C81F739FDB007B863E /* FGXSettingController.xib in Resources */,
+				18E4D8CF1F739FDB007B863E /* FGXPersonalInfoCell.xib in Resources */,
 				1882D3C41F70C0BA001812E3 /* LaunchScreen.storyboard in Resources */,
 				1882D3C11F70C0BA001812E3 /* Assets.xcassets in Resources */,
+				18E4D8CD1F739FDB007B863E /* FGXSettingCell.xib in Resources */,
 				1882D3BF1F70C0BA001812E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,14 +758,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B369443EF928B40713D1519 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		152D2882674E3CF0B29B9B7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FangGongXin/Pods-FangGongXin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4531105F8EC67266F4A4676E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FangGongXin/Pods-FangGongXin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1882D3AD1F70C0BA001812E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E4D8C91F739FDB007B863E /* FGXPersonalInfoController.m in Sources */,
+				18E4D8CE1F739FDB007B863E /* FGXPersonalInfoCell.m in Sources */,
 				1882D3BC1F70C0BA001812E3 /* ViewController.m in Sources */,
 				1882D3B91F70C0BA001812E3 /* AppDelegate.m in Sources */,
+				18B5181C1F724FD500459E4E /* FGXHomeController.m in Sources */,
+				18B518061F7246C500459E4E /* FGXTabBarController.m in Sources */,
+				18E4D8CB1F739FDB007B863E /* FGXPersonalInfoModel.m in Sources */,
+				1882D3F51F70EF6E001812E3 /* LoginRegisterController.m in Sources */,
 				1882D3B61F70C0BA001812E3 /* main.m in Sources */,
+				18E4D8D41F73B0F2007B863E /* FGXContractController.m in Sources */,
+				18E4D8E31F73BE70007B863E /* FGXRealNameAuthenticationController.m in Sources */,
+				18B518091F7246E900459E4E /* FGXNavigationController.m in Sources */,
+				18E4D8C61F739FDB007B863E /* FGXAboutController.m in Sources */,
+				18E4D8C71F739FDB007B863E /* FGXSettingController.m in Sources */,
+				18E4D8CA1F739FDB007B863E /* FGXSettingModel.m in Sources */,
+				18E4D8D81F73B1DE007B863E /* FGXProcessController.m in Sources */,
+				18B5181F1F72514900459E4E /* FGXMessageController.m in Sources */,
+				18B518221F72518A00459E4E /* FGXAgentController.m in Sources */,
+				18E4D8CC1F739FDB007B863E /* FGXSettingCell.m in Sources */,
+				18E4D8C51F739FDB007B863E /* FGXMeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,9 +977,11 @@
 		};
 		1882D3DF1F70C0BA001812E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA49F0B620F064559F3899C /* Pods-FangGongXin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 363VLMZMY4;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FangGongXin/fanggongxin.pch";
 				INFOPLIST_FILE = FangGongXin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YLTC.FangGongXin;
@@ -437,9 +991,11 @@
 		};
 		1882D3E01F70C0BA001812E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27242A9569848444965DCDA7 /* Pods-FangGongXin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 363VLMZMY4;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FangGongXin/fanggongxin.pch";
 				INFOPLIST_FILE = FangGongXin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YLTC.FangGongXin;
@@ -516,6 +1072,7 @@
 				1882D3E01F70C0BA001812E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1882D3E11F70C0BA001812E3 /* Build configuration list for PBXNativeTarget "FangGongXinTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +1081,7 @@
 				1882D3E31F70C0BA001812E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1882D3E41F70C0BA001812E3 /* Build configuration list for PBXNativeTarget "FangGongXinUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +1090,7 @@
 				1882D3E61F70C0BA001812E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
