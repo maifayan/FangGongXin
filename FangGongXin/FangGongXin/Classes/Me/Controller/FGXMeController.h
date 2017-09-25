@@ -10,6 +10,6 @@
 
 @interface FGXMeController : UITableViewController
 
-
++ (instancetype)FGXWithMeController;
 
 @end

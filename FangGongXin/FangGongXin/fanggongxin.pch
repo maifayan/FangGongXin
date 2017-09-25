@@ -26,9 +26,9 @@
 #define XM_yuntu_key      @"58d215ec305a2a68100c996e"
 
 //微信Appkey
-#define XM_Wx_Appkey      @"wx06916fef311bd449"
+#define XM_Wx_Appkey      @"wx59dfa85322253402"
 //微信AppSecret
-#define XM_Wx_AppSecret   @"5c7b7b6b66890572ceab164db75f012a"
+#define XM_Wx_AppSecret   @"2cdd3be037824ef43f813ad14106c814"
 
 
 

@@ -21,6 +21,7 @@
 		18B5181C1F724FD500459E4E /* FGXHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5181B1F724FD500459E4E /* FGXHomeController.m */; };
 		18B5181F1F72514900459E4E /* FGXMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5181E1F72514900459E4E /* FGXMessageController.m */; };
 		18B518221F72518A00459E4E /* FGXAgentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518211F72518A00459E4E /* FGXAgentController.m */; };
+		18CBF7A11F749FBB0028A0D9 /* realName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CBF7A01F749FBB0028A0D9 /* realName.storyboard */; };
 		18E4D8C51F739FDB007B863E /* FGXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8AA1F739FDB007B863E /* FGXMeController.m */; };
 		18E4D8C61F739FDB007B863E /* FGXAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8AE1F739FDB007B863E /* FGXAboutController.m */; };
 		18E4D8C71F739FDB007B863E /* FGXSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8B01F739FDB007B863E /* FGXSettingController.m */; };
@@ -85,6 +86,7 @@
 		18B5181E1F72514900459E4E /* FGXMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMessageController.m; sourceTree = "<group>"; };
 		18B518201F72518A00459E4E /* FGXAgentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAgentController.h; sourceTree = "<group>"; };
 		18B518211F72518A00459E4E /* FGXAgentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAgentController.m; sourceTree = "<group>"; };
+		18CBF7A01F749FBB0028A0D9 /* realName.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = realName.storyboard; sourceTree = "<group>"; };
 		18E4D8A91F739FDB007B863E /* FGXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMeController.h; sourceTree = "<group>"; };
 		18E4D8AA1F739FDB007B863E /* FGXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMeController.m; sourceTree = "<group>"; };
 		18E4D8AD1F739FDB007B863E /* FGXAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAboutController.h; sourceTree = "<group>"; };
@@ -212,7 +214,7 @@
 			children = (
 				18E4D8DA1F73B805007B863E /* Other */,
 				18E4D8A71F739FDB007B863E /* Me */,
-				18B518161F72486500459E4E /* Home */,
+				18B518161F72486500459E4E /* Home(map) */,
 				18B518121F72485C00459E4E /* Message */,
 				18B5180E1F72485000459E4E /* Agent */,
 				1882D3E81F70EF13001812E3 /* LogReg */,
@@ -379,13 +381,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		18B518161F72486500459E4E /* Home */ = {
+		18B518161F72486500459E4E /* Home(map) */ = {
 			isa = PBXGroup;
 			children = (
 				18B518171F72486500459E4E /* Controller */,
 				18B518181F72486500459E4E /* Model */,
 				18B518191F72486500459E4E /* View */,
 			);
+			name = "Home(map)";
 			path = Home;
 			sourceTree = "<group>";
 		};
@@ -599,6 +602,7 @@
 			children = (
 				18E4D8E11F73BE70007B863E /* FGXRealNameAuthenticationController.h */,
 				18E4D8E21F73BE70007B863E /* FGXRealNameAuthenticationController.m */,
+				18CBF7A01F749FBB0028A0D9 /* realName.storyboard */,
 			);
 			path = "Real-nameAuthentication";
 			sourceTree = "<group>";
@@ -734,6 +738,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E4D8C81F739FDB007B863E /* FGXSettingController.xib in Resources */,
+				18CBF7A11F749FBB0028A0D9 /* realName.storyboard in Resources */,
 				18E4D8CF1F739FDB007B863E /* FGXPersonalInfoCell.xib in Resources */,
 				1882D3C41F70C0BA001812E3 /* LaunchScreen.storyboard in Resources */,
 				1882D3C11F70C0BA001812E3 /* Assets.xcassets in Resources */,
