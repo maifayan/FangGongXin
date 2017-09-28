@@ -10,6 +10,8 @@
 #import <UMSocialCore/UMSocialCore.h>
 #import <AFNetworking.h>
 
+#import "FGXTermsController.h"
+#import "FGXTabBarController.h"
 
 #define kMarginX     50
 #define kMarginY     150
@@ -23,12 +25,14 @@
 @property (nonatomic,strong) UIView      *RegisterView;//注册视图
 @property (nonatomic,strong) UITextField *RegUserName;//用户名
 @property (nonatomic,strong) UITextField *RegPassword;//密码
+@property (nonatomic,strong) UIButton    *registerButton;//按钮
 
 
 //登录
 @property (nonatomic,strong) UIView      *LoginView;//登录视图
 @property (nonatomic,strong) UITextField *LogUserName;//用户名
 @property (nonatomic,strong) UITextField *LogPassword;//密码
+
 
 
 
@@ -48,18 +52,17 @@
 
 #pragma mark - 微信登录
 - (void)WXLogin{
-    UILabel *otherLabel = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width / 2 - 80, 500, 120, 30)];
+    UILabel *otherLabel = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width / 2 - 47, 450, 120, 30)];
     otherLabel.text = @"其他登录方式";
-    [self.view addSubview:otherLabel];
+    [self.LoginView addSubview:otherLabel];
     UIButton *WXButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [WXButton setFrame:CGRectMake(kMarginX, 530, kInputBoxW + 70, 30)];
+    [WXButton setFrame:CGRectMake(kMarginX, 480, kInputBoxW + 70, 30)];
     [WXButton setTitle:@"微信登录" forState:UIControlStateNormal];
-    [WXButton setFont:[UIFont systemFontOfSize:14]];
     [WXButton setBackgroundColor:[UIColor greenColor]];
     [WXButton addTarget:self action:@selector(getAuthWithUserInfoFromWechat) forControlEvents:UIControlEventTouchUpInside];
     [WXButton.layer setCornerRadius:9];
     
-    [self.view addSubview:WXButton];
+    [self.LoginView addSubview:WXButton];
     
 }
 #pragma mark - 微信登录获取用户信息
@@ -73,35 +76,46 @@
             UMSocialUserInfoResponse *resp = result;
             
             AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+            // 授权信息
+//            NSLog(@"Wechat uid: %@", resp.uid);
+//            NSLog(@"Wechat openid: %@", resp.openid);
+//            NSLog(@"Wechat accessToken: %@", resp.accessToken);
+//            NSLog(@"Wechat refreshToken: %@", resp.refreshToken);
+//            NSLog(@"Wechat expiration: %@", resp.expiration);
             
-            [mgr POST:@"http://192.168.0.120:8081/user/pre-sign-up" parameters:resp.originalResponse progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [mgr POST:@"http://192.168.0.114:8081/user/pre-sign-up" parameters:resp.originalResponse progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 NSMutableDictionary *responDic = [NSMutableDictionary dictionary];
                 responDic = responseObject[@"data"];
-                NSLog(@"responDic =%@",responDic);
-//                [[NSUserDefaults standardUserDefaults] setObject:responDic[@"openId"]      forKey:XM_openid];
-//                NSString *openStr = [[NSUserDefaults standardUserDefaults] objectForKey:XM_openid];
-//                NSLog(@"%@",openStr);
+//                NSLog(@"responDic =%@",responDic);
+                NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+                [userDefaults setObject:responDic[@"token"] forKey:FromToken];
+                [userDefaults setObject:responDic[@"userInfoWrapper"][@"userWx"][@"openid"]      forKey:FromOpenid];
+                [userDefaults setObject:responDic[@"userInfoWrapper"][@"userWx"][@"userId"]      forKey:FromId];
+                [userDefaults setObject:responDic[@"userInfoWrapper"][@"userWx"][@"nickname"]      forKey:FromName];
+                [userDefaults setObject:responDic[@"userInfoWrapper"][@"userWx"][@"headImageUrl"]      forKey:FromImage];
+                [userDefaults synchronize];
+                
+                // 2.切换根控制器为: tabVc
+                UIWindow *window = [UIApplication sharedApplication].keyWindow;
+                window.rootViewController = [FGXTabBarController FGXWithTabBarController];
+                
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 NSLog(@"不返回数据扣2222222");
                 NSLog(@"后台数据返回错误: %@",error);
             }];
             
-            
-//            //获取userDefault单例
-//            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//            //登陆成功后把用户名和密码存储到UserDefault
-//            [userDefaults setObject:resp.uid          forKey:XM_uid];
-//            //            [userDefaults setObject:resp.openid       forKey:XM_openid];
-//            //            NSString *openStr = [userDefaults objectForKey:XM_openid];
-//            //            NSLog(@"%@",openStr);
-//            [userDefaults setObject:resp.accessToken  forKey:XM_accessToken];
-//            [userDefaults setObject:resp.refreshToken forKey:XM_refreshToken];
-//            [userDefaults setObject:resp.name         forKey:XM_userName];
-//            [userDefaults setObject:resp.iconurl      forKey:XM_iconurl];
-//            [userDefaults setObject:resp.gender       forKey:XM_gender];
-//            [userDefaults synchronize];
-            
-            
+            /*
+             responDic ={
+             userInfoWrapper = {
+                 userWx =         {
+                 headImageUrl = "http://wx.qlogo.cn/mmopen/vi_32/wic3CVWepfNb6qfsMIgccsDmz2dKXkQMvmyukX9CAdaA5osTchaF7yLho7HZZR4LnILNW1icdB02q90XuGK9icMdQ/0";
+                 nickname = "\U9ea6\U5b50\U719f\U4e86";
+                 openid = "o2NRg00J1id_ijYHCk656gvAv-NQ";
+                 userId = "94de4fae-e00c-4ef8-b0d6-c54f2237dee1";
+                 };
+             };
+             }
+             */
         }
     }];
 }
@@ -140,16 +154,56 @@
     [_RegisterView addSubview:regJump];
     
     //立即注册
-    UIButton *registerButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [registerButton setFrame:CGRectMake(kMarginX,kMarginY + 40 + kInputBoxH * 2, kInputBoxW + 70, 30)];
-    [registerButton setTitle:@"立即注册" forState:UIControlStateNormal];
-    [registerButton setFont:[UIFont systemFontOfSize:14]];
-    [registerButton setBackgroundColor:[UIColor blueColor]];
-    [registerButton addTarget:self action:@selector(registerClick) forControlEvents:UIControlEventTouchUpInside];
-    [registerButton.layer setCornerRadius:9];
+    _registerButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_registerButton setFrame:CGRectMake(kMarginX,kMarginY + 40 + kInputBoxH * 2, kInputBoxW + 70, 30)];
+    [_registerButton setTitle:@"立即注册" forState:UIControlStateNormal];
+    [_registerButton setBackgroundColor:[UIColor grayColor]];
+    [_registerButton.layer setCornerRadius:9];
+    [_RegisterView addSubview:_registerButton];
+    
+    
+    //勾选按钮
+    UIButton *checkBox = [UIButton buttonWithType:UIButtonTypeCustom];
+    [checkBox setFrame:CGRectMake(kMarginX , kMarginY + 80 + kInputBoxH * 2, 20, 20)];
+    [checkBox setImage:[UIImage imageNamed:@"icon_ CheckBox"] forState:UIControlStateNormal];
+    [checkBox setImage:[UIImage imageNamed:@"icon_ CheckBox_selectd"] forState:UIControlStateSelected];
+    [checkBox addTarget:self action:@selector(checkBoxSelectd:) forControlEvents:UIControlEventTouchUpInside];
+    checkBox.backgroundColor = [UIColor clearColor];
+    [_RegisterView addSubview:checkBox];
+    
+    //房公信条款
+    UIButton *terms = [UIButton buttonWithType:UIButtonTypeCustom];
+    [terms setFrame:CGRectMake(kMarginX + 10,kMarginY + 80 + kInputBoxH * 2, 280, 20)];
+    NSMutableAttributedString *titleAtt = [[NSMutableAttributedString alloc]initWithString:@"我已阅读并同意《房公信服务条款》"];
+    [titleAtt addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14] range:NSMakeRange(0, 16)];
+    [terms setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [terms setAttributedTitle:titleAtt forState:UIControlStateNormal];
+    [terms setBackgroundColor:[UIColor clearColor]];
+    [terms addTarget:self action:@selector(clickTerms) forControlEvents:UIControlEventTouchUpInside];
+    [_RegisterView addSubview:terms];
 
-    [_RegisterView addSubview:registerButton];
+}
 
+// 勾选
+- (void)checkBoxSelectd:(UIButton *)button{
+    
+    button.selected = !button.selected;
+    if (button.selected) {
+        [_registerButton setBackgroundColor:[UIColor blueColor]];
+        [_registerButton addTarget:self action:@selector(registerClick) forControlEvents:UIControlEventTouchUpInside];
+    }else{
+        [_registerButton setBackgroundColor:[UIColor grayColor]];
+
+    }
+    
+}
+
+
+//clickTerms
+- (void)clickTerms{
+    
+    FGXTermsController *termsC = [[FGXTermsController alloc]init];
+    [self.navigationController pushViewController:termsC animated:YES];
 }
 
 #pragma mark - 登录

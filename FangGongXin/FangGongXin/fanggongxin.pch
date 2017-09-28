@@ -20,17 +20,22 @@
 //友盟redirectURL(回调地址)
 #define XM_Um_redirectURL @"http://mobile.umeng.com/social"
 
-//高德地图Appkey
-#define XM_GDMap_Appkey   @"ec5e6824dfcdc484e9c5b742560edec3"
-//云图key ：58d215ec305a2a68100c996e
-#define XM_yuntu_key      @"58d215ec305a2a68100c996e"
+//高德地图Appkey (高德地图appkey 和 云图key 要对应)
+#define XM_GDMap_Appkey   @"fa603fb46c123c9dfb81c9667f1aade6"
+//云图key ：5914f3f67bbf1937ffc353f0
+#define XM_YunTuTableId   @"5914f3f67bbf1937ffc353f0"
 
 //微信Appkey
 #define XM_Wx_Appkey      @"wx59dfa85322253402"
 //微信AppSecret
 #define XM_Wx_AppSecret   @"2cdd3be037824ef43f813ad14106c814"
 
-
+#define FromToken         @"token"
+//Wx
+#define FromId            @"userId"
+#define FromOpenid        @"openid"
+#define FromName          @"nickname"
+#define FromImage         @"headImageUrl"
 
 
 #define MainStoryboard [UIStoryboard storyboardWithName: @"Main" bundle: nil]

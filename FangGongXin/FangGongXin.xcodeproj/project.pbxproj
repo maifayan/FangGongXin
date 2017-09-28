@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183E8CE01F7B773F00D0A2C9 /* FGXTermsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E8CDF1F7B773F00D0A2C9 /* FGXTermsController.m */; };
+		1863F53C1F7CD75E00C276A4 /* FGXMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F53B1F7CD75E00C276A4 /* FGXMessageController.m */; };
+		1863F53F1F7CD88100C276A4 /* FGXAgentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F53E1F7CD88100C276A4 /* FGXAgentController.m */; };
+		1863F5501F7CDB7600C276A4 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1863F5411F7CDB7600C276A4 /* LICENSE.txt */; };
+		1863F5511F7CDB7600C276A4 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 1863F5421F7CDB7600C276A4 /* README.markdown */; };
+		1863F5521F7CDB7600C276A4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F5461F7CDB7600C276A4 /* FMDatabase.m */; };
+		1863F5531F7CDB7600C276A4 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F5481F7CDB7600C276A4 /* FMDatabaseAdditions.m */; };
+		1863F5541F7CDB7600C276A4 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F54A1F7CDB7600C276A4 /* FMDatabasePool.m */; };
+		1863F5551F7CDB7600C276A4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F54C1F7CDB7600C276A4 /* FMDatabaseQueue.m */; };
+		1863F5561F7CDB7600C276A4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F54F1F7CDB7600C276A4 /* FMResultSet.m */; };
+		1863F5581F7CDB8B00C276A4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863F5571F7CDB8B00C276A4 /* libsqlite3.tbd */; };
 		1882D3B61F70C0BA001812E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3B51F70C0BA001812E3 /* main.m */; };
 		1882D3B91F70C0BA001812E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3B81F70C0BA001812E3 /* AppDelegate.m */; };
 		1882D3BC1F70C0BA001812E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3BB1F70C0BA001812E3 /* ViewController.m */; };
@@ -19,8 +30,6 @@
 		18B518061F7246C500459E4E /* FGXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518051F7246C500459E4E /* FGXTabBarController.m */; };
 		18B518091F7246E900459E4E /* FGXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518081F7246E900459E4E /* FGXNavigationController.m */; };
 		18B5181C1F724FD500459E4E /* FGXHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5181B1F724FD500459E4E /* FGXHomeController.m */; };
-		18B5181F1F72514900459E4E /* FGXMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5181E1F72514900459E4E /* FGXMessageController.m */; };
-		18B518221F72518A00459E4E /* FGXAgentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518211F72518A00459E4E /* FGXAgentController.m */; };
 		18CBF7A11F749FBB0028A0D9 /* realName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CBF7A01F749FBB0028A0D9 /* realName.storyboard */; };
 		18E4D8C51F739FDB007B863E /* FGXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8AA1F739FDB007B863E /* FGXMeController.m */; };
 		18E4D8C61F739FDB007B863E /* FGXAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8AE1F739FDB007B863E /* FGXAboutController.m */; };
@@ -57,6 +66,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183E8CDE1F7B773F00D0A2C9 /* FGXTermsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXTermsController.h; sourceTree = "<group>"; };
+		183E8CDF1F7B773F00D0A2C9 /* FGXTermsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXTermsController.m; sourceTree = "<group>"; };
+		1863F53A1F7CD75E00C276A4 /* FGXMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMessageController.h; sourceTree = "<group>"; };
+		1863F53B1F7CD75E00C276A4 /* FGXMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMessageController.m; sourceTree = "<group>"; };
+		1863F53D1F7CD88100C276A4 /* FGXAgentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAgentController.h; sourceTree = "<group>"; };
+		1863F53E1F7CD88100C276A4 /* FGXAgentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAgentController.m; sourceTree = "<group>"; };
+		1863F5411F7CDB7600C276A4 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		1863F5421F7CDB7600C276A4 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		1863F5451F7CDB7600C276A4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		1863F5461F7CDB7600C276A4 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		1863F5471F7CDB7600C276A4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1863F5481F7CDB7600C276A4 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		1863F5491F7CDB7600C276A4 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		1863F54A1F7CDB7600C276A4 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		1863F54B1F7CDB7600C276A4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		1863F54C1F7CDB7600C276A4 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		1863F54D1F7CDB7600C276A4 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		1863F54E1F7CDB7600C276A4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		1863F54F1F7CDB7600C276A4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		1863F5571F7CDB8B00C276A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1882D3B11F70C0BA001812E3 /* FangGongXin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FangGongXin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1882D3B51F70C0BA001812E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1882D3B71F70C0BA001812E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,10 +111,6 @@
 		18B518081F7246E900459E4E /* FGXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXNavigationController.m; sourceTree = "<group>"; };
 		18B5181A1F724FD500459E4E /* FGXHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXHomeController.h; sourceTree = "<group>"; };
 		18B5181B1F724FD500459E4E /* FGXHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXHomeController.m; sourceTree = "<group>"; };
-		18B5181D1F72514900459E4E /* FGXMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMessageController.h; sourceTree = "<group>"; };
-		18B5181E1F72514900459E4E /* FGXMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMessageController.m; sourceTree = "<group>"; };
-		18B518201F72518A00459E4E /* FGXAgentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAgentController.h; sourceTree = "<group>"; };
-		18B518211F72518A00459E4E /* FGXAgentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAgentController.m; sourceTree = "<group>"; };
 		18CBF7A01F749FBB0028A0D9 /* realName.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = realName.storyboard; sourceTree = "<group>"; };
 		18E4D8A91F739FDB007B863E /* FGXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMeController.h; sourceTree = "<group>"; };
 		18E4D8AA1F739FDB007B863E /* FGXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMeController.m; sourceTree = "<group>"; };
@@ -122,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1863F5581F7CDB8B00C276A4 /* libsqlite3.tbd in Frameworks */,
 				41ADDD5E0250958AD567B980 /* libPods-FangGongXin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +169,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183E8CDD1F7B771D00D0A2C9 /* terms */ = {
+			isa = PBXGroup;
+			children = (
+				183E8CDE1F7B773F00D0A2C9 /* FGXTermsController.h */,
+				183E8CDF1F7B773F00D0A2C9 /* FGXTermsController.m */,
+			);
+			path = terms;
+			sourceTree = "<group>";
+		};
+		1863F5401F7CDB7600C276A4 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				1863F5411F7CDB7600C276A4 /* LICENSE.txt */,
+				1863F5421F7CDB7600C276A4 /* README.markdown */,
+				1863F5431F7CDB7600C276A4 /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		1863F5431F7CDB7600C276A4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1863F5441F7CDB7600C276A4 /* fmdb */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1863F5441F7CDB7600C276A4 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				1863F5451F7CDB7600C276A4 /* FMDatabase.h */,
+				1863F5461F7CDB7600C276A4 /* FMDatabase.m */,
+				1863F5471F7CDB7600C276A4 /* FMDatabaseAdditions.h */,
+				1863F5481F7CDB7600C276A4 /* FMDatabaseAdditions.m */,
+				1863F5491F7CDB7600C276A4 /* FMDatabasePool.h */,
+				1863F54A1F7CDB7600C276A4 /* FMDatabasePool.m */,
+				1863F54B1F7CDB7600C276A4 /* FMDatabaseQueue.h */,
+				1863F54C1F7CDB7600C276A4 /* FMDatabaseQueue.m */,
+				1863F54D1F7CDB7600C276A4 /* FMDB.h */,
+				1863F54E1F7CDB7600C276A4 /* FMResultSet.h */,
+				1863F54F1F7CDB7600C276A4 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		1882D3A81F70C0BA001812E3 = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +284,6 @@
 			isa = PBXGroup;
 			children = (
 				18E4D8DA1F73B805007B863E /* Other */,
-				18E4D8A71F739FDB007B863E /* Me */,
 				18B518161F72486500459E4E /* Home(map) */,
 				18B518121F72485C00459E4E /* Message */,
 				18B5180E1F72485000459E4E /* Agent */,
@@ -297,6 +367,7 @@
 		1882D3F01F70EF13001812E3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				1863F5401F7CDB7600C276A4 /* FMDB */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -328,8 +399,8 @@
 		18B5180F1F72485000459E4E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18B518201F72518A00459E4E /* FGXAgentController.h */,
-				18B518211F72518A00459E4E /* FGXAgentController.m */,
+				1863F53D1F7CD88100C276A4 /* FGXAgentController.h */,
+				1863F53E1F7CD88100C276A4 /* FGXAgentController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,8 +432,8 @@
 		18B518131F72485C00459E4E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18B5181D1F72514900459E4E /* FGXMessageController.h */,
-				18B5181E1F72514900459E4E /* FGXMessageController.m */,
+				1863F53A1F7CD75E00C276A4 /* FGXMessageController.h */,
+				1863F53B1F7CD75E00C276A4 /* FGXMessageController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -384,6 +455,7 @@
 		18B518161F72486500459E4E /* Home(map) */ = {
 			isa = PBXGroup;
 			children = (
+				18E4D8A71F739FDB007B863E /* Me */,
 				18B518171F72486500459E4E /* Controller */,
 				18B518181F72486500459E4E /* Model */,
 				18B518191F72486500459E4E /* View */,
@@ -422,7 +494,8 @@
 				18E4D8B51F739FDB007B863E /* Model */,
 				18E4D8BC1F739FDB007B863E /* View */,
 			);
-			path = Me;
+			name = Me;
+			path = ../Me;
 			sourceTree = "<group>";
 		};
 		18E4D8A81F739FDB007B863E /* Controller */ = {
@@ -562,6 +635,7 @@
 		18E4D8DB1F73B805007B863E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				183E8CDD1F7B771D00D0A2C9 /* terms */,
 				18E4D8DE1F73B8AF007B863E /* AgentCertification */,
 				18E4D8DF1F73B8AF007B863E /* PhoneBinding */,
 				18E4D8E01F73B8AF007B863E /* Real-nameAuthentication */,
@@ -619,6 +693,7 @@
 		99D981CC02DE2D2B65ACD10B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1863F5571F7CDB8B00C276A4 /* libsqlite3.tbd */,
 				5B3688071B866E61A8427FC3 /* libPods-FangGongXin.a */,
 			);
 			name = Frameworks;
@@ -741,6 +816,7 @@
 				18CBF7A11F749FBB0028A0D9 /* realName.storyboard in Resources */,
 				18E4D8CF1F739FDB007B863E /* FGXPersonalInfoCell.xib in Resources */,
 				1882D3C41F70C0BA001812E3 /* LaunchScreen.storyboard in Resources */,
+				1863F5501F7CDB7600C276A4 /* LICENSE.txt in Resources */,
 				1882D3C11F70C0BA001812E3 /* Assets.xcassets in Resources */,
 				18E4D8CD1F739FDB007B863E /* FGXSettingCell.xib in Resources */,
 				1882D3BF1F70C0BA001812E3 /* Main.storyboard in Resources */,
@@ -816,26 +892,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1863F5511F7CDB7600C276A4 /* README.markdown in Sources */,
 				18E4D8C91F739FDB007B863E /* FGXPersonalInfoController.m in Sources */,
 				18E4D8CE1F739FDB007B863E /* FGXPersonalInfoCell.m in Sources */,
 				1882D3BC1F70C0BA001812E3 /* ViewController.m in Sources */,
 				1882D3B91F70C0BA001812E3 /* AppDelegate.m in Sources */,
 				18B5181C1F724FD500459E4E /* FGXHomeController.m in Sources */,
+				1863F53F1F7CD88100C276A4 /* FGXAgentController.m in Sources */,
 				18B518061F7246C500459E4E /* FGXTabBarController.m in Sources */,
+				1863F5521F7CDB7600C276A4 /* FMDatabase.m in Sources */,
 				18E4D8CB1F739FDB007B863E /* FGXPersonalInfoModel.m in Sources */,
 				1882D3F51F70EF6E001812E3 /* LoginRegisterController.m in Sources */,
 				1882D3B61F70C0BA001812E3 /* main.m in Sources */,
+				1863F5541F7CDB7600C276A4 /* FMDatabasePool.m in Sources */,
 				18E4D8D41F73B0F2007B863E /* FGXContractController.m in Sources */,
+				1863F53C1F7CD75E00C276A4 /* FGXMessageController.m in Sources */,
+				1863F5561F7CDB7600C276A4 /* FMResultSet.m in Sources */,
 				18E4D8E31F73BE70007B863E /* FGXRealNameAuthenticationController.m in Sources */,
+				183E8CE01F7B773F00D0A2C9 /* FGXTermsController.m in Sources */,
+				1863F5551F7CDB7600C276A4 /* FMDatabaseQueue.m in Sources */,
 				18B518091F7246E900459E4E /* FGXNavigationController.m in Sources */,
 				18E4D8C61F739FDB007B863E /* FGXAboutController.m in Sources */,
 				18E4D8C71F739FDB007B863E /* FGXSettingController.m in Sources */,
 				18E4D8CA1F739FDB007B863E /* FGXSettingModel.m in Sources */,
 				18E4D8D81F73B1DE007B863E /* FGXProcessController.m in Sources */,
-				18B5181F1F72514900459E4E /* FGXMessageController.m in Sources */,
-				18B518221F72518A00459E4E /* FGXAgentController.m in Sources */,
 				18E4D8CC1F739FDB007B863E /* FGXSettingCell.m in Sources */,
 				18E4D8C51F739FDB007B863E /* FGXMeController.m in Sources */,
+				1863F5531F7CDB7600C276A4 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <UMSocialCore/UMSocialCore.h>
-#import "LoginRegisterController.h"
 #import "FGXTabBarController.h"
 @interface AppDelegate ()
 
@@ -30,7 +29,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     //主界面
-//    LoginRegisterController *LogReg = [[LoginRegisterController alloc]init];
     FGXTabBarController *taBC = [FGXTabBarController FGXWithTabBarController];
     self.window.rootViewController = taBC;
     [self.window makeKeyAndVisible];

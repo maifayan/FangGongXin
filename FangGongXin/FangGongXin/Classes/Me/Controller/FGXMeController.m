@@ -11,6 +11,8 @@
 #import "FGXContractController.h"
 
 #import "FGXRealNameAuthenticationController.h"
+#import <AFNetworking.h>
+#import "FGXTabBarController.h"
 
 @interface FGXMeController ()
 @property (weak, nonatomic) IBOutlet UIImageView *headView;
@@ -45,9 +47,42 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 1) {
-        if (indexPath.row == 3) {
+        if (indexPath.row == 4) {
+            
+//            /user/sign-out
+            
+            AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+            NSMutableDictionary *outDic = [NSMutableDictionary dictionary];
+            outDic[@"token"] = [[NSUserDefaults standardUserDefaults]valueForKey:FromToken];
+            [mgr POST:@"http://192.168.0.114:8081/user/sign-out" parameters:outDic  progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                NSMutableDictionary *responDic = [NSMutableDictionary dictionary];
+                responDic = responseObject[@"data"];
+                NSLog(@"退出responDic =%@",responDic);
+                if (![[NSUserDefaults standardUserDefaults]objectForKey:FromName]) {
+                    return;
+                }else{
+                    [[NSUserDefaults standardUserDefaults] removeObjectForKey:FromToken];
+                    [[NSUserDefaults standardUserDefaults] removeObjectForKey:FromOpenid];
+                    [[NSUserDefaults standardUserDefaults] removeObjectForKey:FromId];
+                    [[NSUserDefaults standardUserDefaults] removeObjectForKey:FromName];
+                    [[NSUserDefaults standardUserDefaults] removeObjectForKey:FromImage];
+                    [[NSUserDefaults standardUserDefaults] synchronize];
+                }
+                
+                // 2.切换根控制器为: tabVc
+                UIWindow *window = [UIApplication sharedApplication].keyWindow;
+                window.rootViewController = [FGXTabBarController FGXWithTabBarController];
+
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                
+                NSLog(@"退出错误: %@",error);
+            }];
+            
+            
+        }else if (indexPath.row == 3){
             FGXSettingController *settingC = [[FGXSettingController alloc]init];
             [self.navigationController pushViewController:settingC animated:YES];
+            
         }else if(indexPath.row == 2){
             FGXContractController *contractC = [[FGXContractController alloc]init];
             [self.navigationController pushViewController:contractC animated:YES];
@@ -71,7 +106,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 20;
+    return 10;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
