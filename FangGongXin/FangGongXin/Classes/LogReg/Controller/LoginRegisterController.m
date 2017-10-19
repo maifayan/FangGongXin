@@ -8,7 +8,7 @@
 
 #import "LoginRegisterController.h"
 #import <UMSocialCore/UMSocialCore.h>
-#import <AFNetworking.h>
+
 
 #import "FGXTermsController.h"
 #import "FGXTabBarController.h"
@@ -48,6 +48,20 @@
     [self LoginFangGongXin];
     //微信授权登录
     [self WXLogin];
+    //取消
+    [self cancel];
+}
+#pragma mark -  取消
+- (void)cancel{
+    UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+    [cancelBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [cancelBtn setFrame:CGRectMake(kMarginX, 50, 50, 50)];
+    [cancelBtn addTarget:self action:@selector(cancelClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cancelBtn];
+}
+- (void)cancelClick{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark - 微信登录
@@ -96,7 +110,7 @@
                 [userDefaults synchronize];
                 
                 // 2.切换根控制器为: tabVc
-                UIWindow *window = [UIApplication sharedApplication].keyWindow;
+                UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
                 window.rootViewController = [FGXTabBarController FGXWithTabBarController];
                 
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -149,7 +163,7 @@
     UIButton *regJump = [UIButton buttonWithType:UIButtonTypeCustom];
     [regJump setTitle:@"已有账号" forState:UIControlStateNormal];
     [regJump setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [regJump setFrame:CGRectMake(250, 100, 100, 40)];
+    [regJump setFrame:CGRectMake(250, 50, 100, 40)];
     [regJump addTarget:self action:@selector(exchangeSubview) forControlEvents:UIControlEventTouchUpInside];
     [_RegisterView addSubview:regJump];
     
@@ -237,7 +251,7 @@
     UIButton *loginJump = [UIButton buttonWithType:UIButtonTypeCustom];
     [loginJump setTitle:@"注册账号" forState:UIControlStateNormal];
     [loginJump setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [loginJump setFrame:CGRectMake(250, 100, 100, 40)];
+    [loginJump setFrame:CGRectMake(250, 50, 100, 40)];
     [loginJump addTarget:self action:@selector(exchangeSubview) forControlEvents:UIControlEventTouchUpInside];
     [_LoginView addSubview:loginJump];
     //立即登录

@@ -458,7 +458,6 @@
     if (!_headBtn) {
         _headBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_headBtn setFrame:CGRectMake(10, 78, 60, 60)];
-        NSLog(@"token ===>%@",self.token);
         if (!self.token) {
             
             [_headBtn setBackgroundImage:[UIImage imageNamed:@"setup-head-default.png"] forState:UIControlStateNormal];

@@ -95,35 +95,6 @@
             </objects>
             <point key="canvasLocation" x="-932" y="-1509"/>
         </scene>
-        <!--Agent Controller-->
-        <scene sceneID="gnF-lt-Co8">
-            <objects>
-                <tableViewController storyboardIdentifier="FGXAgentController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nle-Pi-Hqo" customClass="FGXAgentController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eTp-q5-hLo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Fwd-DS-uQd">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fwd-DS-uQd" id="qyM-sy-ROJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="nle-Pi-Hqo" id="JHT-jC-MYZ"/>
-                            <outlet property="delegate" destination="nle-Pi-Hqo" id="u13-au-Lhb"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="mhy-kf-KOR"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GUx-ab-Kww" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-931" y="-1001"/>
-        </scene>
         <!--沟通记录-->
         <scene sceneID="Fjg-0h-EdR">
             <objects>
@@ -151,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="nle-Pi-Hqo" kind="relationship" relationship="rootViewController" id="lhA-rv-dnv"/>
+                        <segue destination="dzR-yl-e3b" kind="relationship" relationship="rootViewController" id="S5f-wX-lsa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sI2-Tv-YIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -171,6 +142,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGf-HY-d4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1751" y="-694"/>
+        </scene>
+        <!--Agent Controller-->
+        <scene sceneID="k3b-t5-xmf">
+            <objects>
+                <tableViewController id="dzR-yl-e3b" customClass="FGXAgentController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="B4L-lT-ntv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8u6-nE-NBp">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8u6-nE-NBp" id="YRk-O5-4Kb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dzR-yl-e3b" id="Fvs-VE-63N"/>
+                            <outlet property="delegate" destination="dzR-yl-e3b" id="fLH-pH-6P2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="1NN-YI-tO7"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="46t-an-jyv" id="wCU-dC-mX4"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yme-ao-3l5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="46t-an-jyv">
+                    <connections>
+                        <outlet property="delegate" destination="dzR-yl-e3b" id="GJ7-Wi-ovf"/>
+                        <outlet property="searchContentsController" destination="dzR-yl-e3b" id="4or-ft-nKV"/>
+                        <outlet property="searchResultsDataSource" destination="dzR-yl-e3b" id="VZ2-4t-y5t"/>
+                        <outlet property="searchResultsDelegate" destination="dzR-yl-e3b" id="IGV-3F-K06"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-920" y="-900"/>
         </scene>
         <!--房源列表-->
         <scene sceneID="6JJ-Al-E6p">

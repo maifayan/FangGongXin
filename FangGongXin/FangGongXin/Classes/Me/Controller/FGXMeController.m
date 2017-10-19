@@ -11,7 +11,6 @@
 #import "FGXContractController.h"
 
 #import "FGXRealNameAuthenticationController.h"
-#import <AFNetworking.h>
 #import "FGXTabBarController.h"
 
 @interface FGXMeController ()

@@ -7,88 +7,152 @@
 //
 
 #import "FGXMessageController.h"
+#import "FGXMessageCell.h"
+#import "FGXMessageModel.h"
+#import "FGXChatController.h"
+#import "NSString+YFTimestamp.h"
+#import "FMDB.h"
 
 @interface FGXMessageController ()
+
+@property (nonatomic ,strong) NSMutableArray *messageArr;
+
+@property (nonatomic, strong) FMDatabase     *database;
 
 @end
 
 @implementation FGXMessageController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.messageArr removeAllObjects];
+    [self getMessageData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationItem.title = @"会话列表";
+    
+//    [self query];
 }
+
+#pragma mark - Data
+- (void)getMessageData{
+    /*
+     headImageUrl = "http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIrDxpnFoIlFFWrib0jJlA91L1mHHGWUQLFrRQKhvia06W9jV3hftfc6mKNLER3mKEMxK4j6WLwDYvQ/0";
+     
+     nickname = "\U6930\U5b50.Zz";
+     
+     userId = "203c4264-d1a5-4ceb-aeb1-32802091b64f";
+     };
+     }
+     */
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    NSString  *urlStr = [NSString stringWithFormat:@"%@message/chat-list",chatUrl];
+    NSMutableDictionary *parameter = [NSMutableDictionary dictionary];
+    parameter[@"id"] = [[NSUserDefaults standardUserDefaults] valueForKey:FromId];
+    
+    [mgr POST:urlStr parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"responseObject === >%@",responseObject);
+        NSMutableArray *dataArray = [NSMutableArray array];
+        dataArray = responseObject[@"data"];
+        NSMutableDictionary *responDic = [NSMutableDictionary dictionary];
+        for (int i = 0; i < dataArray.count; i++) {
+            [responDic setDictionary:dataArray[i]];
+            FGXMessageModel *messageModel = [[FGXMessageModel alloc]init];
+            messageModel.headIcon = responDic[@"userWx"][@"headImageUrl"];
+            messageModel.nickName = responDic[@"userWx"][@"nickname"];
+            messageModel.userId   = responDic[@"userWx"][@"userId"];
+            messageModel.content  = responDic[@"message"][@"content"];
+            messageModel.time     = [NSString yf_convastionTimeStr:[responDic[@"message"][@"timeStamp"] longLongValue]];
+            messageModel.count    = [responDic[@"count"] stringValue];
+            FGXChatController *chat = [[FGXChatController alloc]init];
+
+            messageModel.content  =  chat.dataDic[@"content"];
+            
+            [self.messageArr addObject:messageModel];
+        }
+        //刷新表格
+        [self.tableView reloadData];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+}
+
+////聊天记录
+//- (void)query {
+//    [self.database open];
+//    
+//    // 1.执行查询语句
+//    FMResultSet *resultSet = [self.database executeQuery:@"SELECT * FROM compontentStr"];
+//    // 2.遍历结果
+//    NSMutableDictionary *resultDic = (NSMutableDictionary *)resultSet;
+//    
+//    while ([resultSet next]) {
+//        FGXMessageModel *meModel = [[FGXMessageModel alloc]init];
+//        
+//        
+//        meModel.content  = [resultSet stringForColumn:@"content"];
+//        
+//        NSLog(@"%@",meModel.content);
+//    }
+//    
+//}
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return self.messageArr.count;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 80;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 1;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    // Configure the cell...
-    
+    FGXMessageCell  *cell = [FGXMessageCell messageCellWithTableView:tableView];
+    cell.messageModel     = self.messageArr[indexPath.row];
+    cell.selectionStyle   = UITableViewCellSelectionStyleNone;
     return cell;
+   
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewRowAction *markAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"标为中介" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        NSLog(@"标为中介");
+    }];
+    UITableViewRowAction *entrustAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"委托过户" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        NSLog(@"委托过户");
+    }];
+    entrustAction.backgroundColor = [UIColor colorWithRed:119 / 255.0  green:91 / 255.0 blue:189 / 255.0 alpha:1];
+    markAction.backgroundColor  = [UIColor colorWithRed:143 / 255.0 green:119 / 255.0 blue:199 / 255.0 alpha:1];
+    return @[entrustAction,markAction];
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    editingStyle = UITableViewCellEditingStyleNone;
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+#pragma mark - 懒加载
+- (NSMutableArray *)messageArr{
+    if (!_messageArr) {
+        _messageArr = [NSMutableArray array];
+    }
+    return _messageArr;
 }
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

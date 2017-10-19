@@ -37,9 +37,15 @@
 #define FromName          @"nickname"
 #define FromImage         @"headImageUrl"
 
+#define ToId              @"toID"
+#define ToName            @"toNickname"
+#define ToImage           @"toHeadimg"
+
+#define chatUrl  @"http://192.168.0.114:8081/"
 
 #define MainStoryboard [UIStoryboard storyboardWithName: @"Main" bundle: nil]
 
+#import <AFNetworking.h>
 #import <WebKit/WebKit.h>
 
 

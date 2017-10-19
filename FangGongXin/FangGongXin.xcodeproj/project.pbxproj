@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		183E8CE01F7B773F00D0A2C9 /* FGXTermsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E8CDF1F7B773F00D0A2C9 /* FGXTermsController.m */; };
+		18309F931F90551E00368C8F /* FGXMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18309F921F90551E00368C8F /* FGXMessageModel.m */; };
+		184AE14F1F7E1922001392C3 /* FGXRealNameAuthenticationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184AE1451F7E1922001392C3 /* FGXRealNameAuthenticationController.m */; };
+		184AE1501F7E1922001392C3 /* realName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184AE1471F7E1922001392C3 /* realName.storyboard */; };
+		184AE1511F7E1922001392C3 /* FGXTermsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184AE14C1F7E1922001392C3 /* FGXTermsController.m */; };
+		184AE1581F7E22FA001392C3 /* FGXChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184AE1571F7E22FA001392C3 /* FGXChatController.m */; };
+		1858FC591F8F49C3006B0A76 /* FGXMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858FC571F8F49C3006B0A76 /* FGXMessageCell.m */; };
+		1858FC5A1F8F49C3006B0A76 /* FGXMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1858FC581F8F49C3006B0A76 /* FGXMessageCell.xib */; };
 		1863F53C1F7CD75E00C276A4 /* FGXMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F53B1F7CD75E00C276A4 /* FGXMessageController.m */; };
-		1863F53F1F7CD88100C276A4 /* FGXAgentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F53E1F7CD88100C276A4 /* FGXAgentController.m */; };
 		1863F5501F7CDB7600C276A4 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1863F5411F7CDB7600C276A4 /* LICENSE.txt */; };
 		1863F5511F7CDB7600C276A4 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 1863F5421F7CDB7600C276A4 /* README.markdown */; };
 		1863F5521F7CDB7600C276A4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F5461F7CDB7600C276A4 /* FMDatabase.m */; };
@@ -18,6 +23,9 @@
 		1863F5551F7CDB7600C276A4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F54C1F7CDB7600C276A4 /* FMDatabaseQueue.m */; };
 		1863F5561F7CDB7600C276A4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F54F1F7CDB7600C276A4 /* FMResultSet.m */; };
 		1863F5581F7CDB8B00C276A4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863F5571F7CDB8B00C276A4 /* libsqlite3.tbd */; };
+		1863F55B1F7CDFAF00C276A4 /* FGXAgentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F55A1F7CDFAF00C276A4 /* FGXAgentModel.m */; };
+		1863F55F1F7CE4D500C276A4 /* FGXAgentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863F55D1F7CE4D500C276A4 /* FGXAgentCell.m */; };
+		1863F5601F7CE4D500C276A4 /* FGXAgentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1863F55E1F7CE4D500C276A4 /* FGXAgentCell.xib */; };
 		1882D3B61F70C0BA001812E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3B51F70C0BA001812E3 /* main.m */; };
 		1882D3B91F70C0BA001812E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3B81F70C0BA001812E3 /* AppDelegate.m */; };
 		1882D3BC1F70C0BA001812E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3BB1F70C0BA001812E3 /* ViewController.m */; };
@@ -27,10 +35,20 @@
 		1882D3CF1F70C0BA001812E3 /* FangGongXinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3CE1F70C0BA001812E3 /* FangGongXinTests.m */; };
 		1882D3DA1F70C0BA001812E3 /* FangGongXinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3D91F70C0BA001812E3 /* FangGongXinUITests.m */; };
 		1882D3F51F70EF6E001812E3 /* LoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882D3F41F70EF6E001812E3 /* LoginRegisterController.m */; };
+		189399E41F7F288F00ECB998 /* FGXChatInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 189399E31F7F288F00ECB998 /* FGXChatInputBar.m */; };
+		189399EF1F7F29A900ECB998 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 189399E71F7F29A900ECB998 /* ALView+PureLayout.m */; };
+		189399F01F7F29A900ECB998 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 189399E91F7F29A900ECB998 /* NSArray+PureLayout.m */; };
+		189399F11F7F29A900ECB998 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 189399EB1F7F29A900ECB998 /* NSLayoutConstraint+PureLayout.m */; };
+		189399F41F7F35B300ECB998 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 189399F31F7F35B300ECB998 /* UIResponder+Router.m */; };
+		189399F71F7F69DE00ECB998 /* FGXChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 189399F61F7F69DE00ECB998 /* FGXChat.m */; };
+		189399FA1F7F6A0600ECB998 /* FGXChatFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 189399F91F7F6A0600ECB998 /* FGXChatFrame.m */; };
+		189399FD1F7F6CA100ECB998 /* NSString+YFTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 189399FC1F7F6CA100ECB998 /* NSString+YFTimestamp.m */; };
+		18939A011F7F6ED500ECB998 /* FGXChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18939A001F7F6ED500ECB998 /* FGXChatCell.m */; };
+		18939A041F7F6F9C00ECB998 /* XMGLongPressBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 18939A031F7F6F9C00ECB998 /* XMGLongPressBtn.m */; };
+		18939A071F7F6FF800ECB998 /* UIImage+YFResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 18939A061F7F6FF800ECB998 /* UIImage+YFResizing.m */; };
 		18B518061F7246C500459E4E /* FGXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518051F7246C500459E4E /* FGXTabBarController.m */; };
 		18B518091F7246E900459E4E /* FGXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B518081F7246E900459E4E /* FGXNavigationController.m */; };
 		18B5181C1F724FD500459E4E /* FGXHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5181B1F724FD500459E4E /* FGXHomeController.m */; };
-		18CBF7A11F749FBB0028A0D9 /* realName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CBF7A01F749FBB0028A0D9 /* realName.storyboard */; };
 		18E4D8C51F739FDB007B863E /* FGXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8AA1F739FDB007B863E /* FGXMeController.m */; };
 		18E4D8C61F739FDB007B863E /* FGXAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8AE1F739FDB007B863E /* FGXAboutController.m */; };
 		18E4D8C71F739FDB007B863E /* FGXSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8B01F739FDB007B863E /* FGXSettingController.m */; };
@@ -44,7 +62,7 @@
 		18E4D8CF1F739FDB007B863E /* FGXPersonalInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E4D8C41F739FDB007B863E /* FGXPersonalInfoCell.xib */; };
 		18E4D8D41F73B0F2007B863E /* FGXContractController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8D31F73B0F2007B863E /* FGXContractController.m */; };
 		18E4D8D81F73B1DE007B863E /* FGXProcessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8D71F73B1DE007B863E /* FGXProcessController.m */; };
-		18E4D8E31F73BE70007B863E /* FGXRealNameAuthenticationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D8E21F73BE70007B863E /* FGXRealNameAuthenticationController.m */; };
+		18F42D941F8B217700DA32A9 /* FGXAgentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F42D921F8B217700DA32A9 /* FGXAgentController.m */; };
 		41ADDD5E0250958AD567B980 /* libPods-FangGongXin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3688071B866E61A8427FC3 /* libPods-FangGongXin.a */; };
 /* End PBXBuildFile section */
 
@@ -66,12 +84,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		183E8CDE1F7B773F00D0A2C9 /* FGXTermsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXTermsController.h; sourceTree = "<group>"; };
-		183E8CDF1F7B773F00D0A2C9 /* FGXTermsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXTermsController.m; sourceTree = "<group>"; };
+		18309F911F90551E00368C8F /* FGXMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMessageModel.h; sourceTree = "<group>"; };
+		18309F921F90551E00368C8F /* FGXMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMessageModel.m; sourceTree = "<group>"; };
+		184AE1441F7E1922001392C3 /* FGXRealNameAuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXRealNameAuthenticationController.h; sourceTree = "<group>"; };
+		184AE1451F7E1922001392C3 /* FGXRealNameAuthenticationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXRealNameAuthenticationController.m; sourceTree = "<group>"; };
+		184AE1471F7E1922001392C3 /* realName.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = realName.storyboard; path = ../realName.storyboard; sourceTree = "<group>"; };
+		184AE14B1F7E1922001392C3 /* FGXTermsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXTermsController.h; sourceTree = "<group>"; };
+		184AE14C1F7E1922001392C3 /* FGXTermsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXTermsController.m; sourceTree = "<group>"; };
+		184AE1561F7E22FA001392C3 /* FGXChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXChatController.h; sourceTree = "<group>"; };
+		184AE1571F7E22FA001392C3 /* FGXChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXChatController.m; sourceTree = "<group>"; };
+		1858FC561F8F49C3006B0A76 /* FGXMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMessageCell.h; sourceTree = "<group>"; };
+		1858FC571F8F49C3006B0A76 /* FGXMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMessageCell.m; sourceTree = "<group>"; };
+		1858FC581F8F49C3006B0A76 /* FGXMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGXMessageCell.xib; sourceTree = "<group>"; };
 		1863F53A1F7CD75E00C276A4 /* FGXMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMessageController.h; sourceTree = "<group>"; };
 		1863F53B1F7CD75E00C276A4 /* FGXMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMessageController.m; sourceTree = "<group>"; };
-		1863F53D1F7CD88100C276A4 /* FGXAgentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAgentController.h; sourceTree = "<group>"; };
-		1863F53E1F7CD88100C276A4 /* FGXAgentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAgentController.m; sourceTree = "<group>"; };
 		1863F5411F7CDB7600C276A4 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		1863F5421F7CDB7600C276A4 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		1863F5451F7CDB7600C276A4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -86,6 +112,11 @@
 		1863F54E1F7CDB7600C276A4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		1863F54F1F7CDB7600C276A4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		1863F5571F7CDB8B00C276A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1863F5591F7CDFAF00C276A4 /* FGXAgentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAgentModel.h; sourceTree = "<group>"; };
+		1863F55A1F7CDFAF00C276A4 /* FGXAgentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAgentModel.m; sourceTree = "<group>"; };
+		1863F55C1F7CE4D500C276A4 /* FGXAgentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAgentCell.h; sourceTree = "<group>"; };
+		1863F55D1F7CE4D500C276A4 /* FGXAgentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAgentCell.m; sourceTree = "<group>"; };
+		1863F55E1F7CE4D500C276A4 /* FGXAgentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGXAgentCell.xib; sourceTree = "<group>"; };
 		1882D3B11F70C0BA001812E3 /* FangGongXin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FangGongXin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1882D3B51F70C0BA001812E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1882D3B71F70C0BA001812E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,13 +136,37 @@
 		1882D3F31F70EF6E001812E3 /* LoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRegisterController.h; sourceTree = "<group>"; };
 		1882D3F41F70EF6E001812E3 /* LoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRegisterController.m; sourceTree = "<group>"; };
 		1882D3F61F7118B5001812E3 /* fanggongxin.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fanggongxin.pch; sourceTree = "<group>"; };
+		189399E21F7F288F00ECB998 /* FGXChatInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXChatInputBar.h; sourceTree = "<group>"; };
+		189399E31F7F288F00ECB998 /* FGXChatInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXChatInputBar.m; sourceTree = "<group>"; };
+		189399E61F7F29A900ECB998 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		189399E71F7F29A900ECB998 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		189399E81F7F29A900ECB998 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		189399E91F7F29A900ECB998 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		189399EA1F7F29A900ECB998 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		189399EB1F7F29A900ECB998 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		189399EC1F7F29A900ECB998 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		189399ED1F7F29A900ECB998 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		189399EE1F7F29A900ECB998 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		189399F21F7F35B300ECB998 /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		189399F31F7F35B300ECB998 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		189399F51F7F69DE00ECB998 /* FGXChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXChat.h; sourceTree = "<group>"; };
+		189399F61F7F69DE00ECB998 /* FGXChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXChat.m; sourceTree = "<group>"; };
+		189399F81F7F6A0600ECB998 /* FGXChatFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXChatFrame.h; sourceTree = "<group>"; };
+		189399F91F7F6A0600ECB998 /* FGXChatFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXChatFrame.m; sourceTree = "<group>"; };
+		189399FB1F7F6CA100ECB998 /* NSString+YFTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YFTimestamp.h"; sourceTree = "<group>"; };
+		189399FC1F7F6CA100ECB998 /* NSString+YFTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YFTimestamp.m"; sourceTree = "<group>"; };
+		189399FF1F7F6ED500ECB998 /* FGXChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXChatCell.h; sourceTree = "<group>"; };
+		18939A001F7F6ED500ECB998 /* FGXChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXChatCell.m; sourceTree = "<group>"; };
+		18939A021F7F6F9C00ECB998 /* XMGLongPressBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLongPressBtn.h; sourceTree = "<group>"; };
+		18939A031F7F6F9C00ECB998 /* XMGLongPressBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLongPressBtn.m; sourceTree = "<group>"; };
+		18939A051F7F6FF800ECB998 /* UIImage+YFResizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YFResizing.h"; sourceTree = "<group>"; };
+		18939A061F7F6FF800ECB998 /* UIImage+YFResizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YFResizing.m"; sourceTree = "<group>"; };
 		18B518041F7246C500459E4E /* FGXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXTabBarController.h; sourceTree = "<group>"; };
 		18B518051F7246C500459E4E /* FGXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXTabBarController.m; sourceTree = "<group>"; };
 		18B518071F7246E900459E4E /* FGXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXNavigationController.h; sourceTree = "<group>"; };
 		18B518081F7246E900459E4E /* FGXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXNavigationController.m; sourceTree = "<group>"; };
 		18B5181A1F724FD500459E4E /* FGXHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXHomeController.h; sourceTree = "<group>"; };
 		18B5181B1F724FD500459E4E /* FGXHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXHomeController.m; sourceTree = "<group>"; };
-		18CBF7A01F749FBB0028A0D9 /* realName.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = realName.storyboard; sourceTree = "<group>"; };
 		18E4D8A91F739FDB007B863E /* FGXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXMeController.h; sourceTree = "<group>"; };
 		18E4D8AA1F739FDB007B863E /* FGXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXMeController.m; sourceTree = "<group>"; };
 		18E4D8AD1F739FDB007B863E /* FGXAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAboutController.h; sourceTree = "<group>"; };
@@ -135,8 +190,8 @@
 		18E4D8D31F73B0F2007B863E /* FGXContractController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXContractController.m; sourceTree = "<group>"; };
 		18E4D8D61F73B1DE007B863E /* FGXProcessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXProcessController.h; sourceTree = "<group>"; };
 		18E4D8D71F73B1DE007B863E /* FGXProcessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXProcessController.m; sourceTree = "<group>"; };
-		18E4D8E11F73BE70007B863E /* FGXRealNameAuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXRealNameAuthenticationController.h; sourceTree = "<group>"; };
-		18E4D8E21F73BE70007B863E /* FGXRealNameAuthenticationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXRealNameAuthenticationController.m; sourceTree = "<group>"; };
+		18F42D921F8B217700DA32A9 /* FGXAgentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGXAgentController.m; sourceTree = "<group>"; };
+		18F42D931F8B217700DA32A9 /* FGXAgentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGXAgentController.h; sourceTree = "<group>"; };
 		27242A9569848444965DCDA7 /* Pods-FangGongXin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangGongXin.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangGongXin/Pods-FangGongXin.release.xcconfig"; sourceTree = "<group>"; };
 		5B3688071B866E61A8427FC3 /* libPods-FangGongXin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FangGongXin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA49F0B620F064559F3899C /* Pods-FangGongXin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangGongXin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangGongXin/Pods-FangGongXin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,13 +224,186 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		183E8CDD1F7B771D00D0A2C9 /* terms */ = {
+		184AE1391F7E1922001392C3 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				183E8CDE1F7B773F00D0A2C9 /* FGXTermsController.h */,
-				183E8CDF1F7B773F00D0A2C9 /* FGXTermsController.m */,
+				184AE1521F7E22CF001392C3 /* Chat */,
+				184AE13A1F7E1922001392C3 /* AgentCertification */,
+				184AE13E1F7E1922001392C3 /* PhoneBinding */,
+				184AE1421F7E1922001392C3 /* Real-nameAuthentication */,
+				184AE1491F7E1922001392C3 /* terms */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		184AE13A1F7E1922001392C3 /* AgentCertification */ = {
+			isa = PBXGroup;
+			children = (
+				184AE13B1F7E1922001392C3 /* Controller */,
+				184AE13C1F7E1922001392C3 /* Model */,
+				184AE13D1F7E1922001392C3 /* View */,
+			);
+			path = AgentCertification;
+			sourceTree = "<group>";
+		};
+		184AE13B1F7E1922001392C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		184AE13C1F7E1922001392C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184AE13D1F7E1922001392C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		184AE13E1F7E1922001392C3 /* PhoneBinding */ = {
+			isa = PBXGroup;
+			children = (
+				184AE13F1F7E1922001392C3 /* Controller */,
+				184AE1401F7E1922001392C3 /* Model */,
+				184AE1411F7E1922001392C3 /* View */,
+			);
+			path = PhoneBinding;
+			sourceTree = "<group>";
+		};
+		184AE13F1F7E1922001392C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		184AE1401F7E1922001392C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184AE1411F7E1922001392C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		184AE1421F7E1922001392C3 /* Real-nameAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				184AE1431F7E1922001392C3 /* Controller */,
+				184AE1461F7E1922001392C3 /* Model */,
+				184AE1481F7E1922001392C3 /* View */,
+			);
+			path = "Real-nameAuthentication";
+			sourceTree = "<group>";
+		};
+		184AE1431F7E1922001392C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184AE1441F7E1922001392C3 /* FGXRealNameAuthenticationController.h */,
+				184AE1451F7E1922001392C3 /* FGXRealNameAuthenticationController.m */,
+				184AE1471F7E1922001392C3 /* realName.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		184AE1461F7E1922001392C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184AE1481F7E1922001392C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		184AE1491F7E1922001392C3 /* terms */ = {
+			isa = PBXGroup;
+			children = (
+				184AE14A1F7E1922001392C3 /* Controller */,
+				184AE14D1F7E1922001392C3 /* Model */,
+				184AE14E1F7E1922001392C3 /* View */,
 			);
 			path = terms;
+			sourceTree = "<group>";
+		};
+		184AE14A1F7E1922001392C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184AE14B1F7E1922001392C3 /* FGXTermsController.h */,
+				184AE14C1F7E1922001392C3 /* FGXTermsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		184AE14D1F7E1922001392C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184AE14E1F7E1922001392C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		184AE1521F7E22CF001392C3 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				184AE1531F7E22CF001392C3 /* Controller */,
+				184AE1541F7E22CF001392C3 /* Model */,
+				184AE1551F7E22CF001392C3 /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		184AE1531F7E22CF001392C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184AE1561F7E22FA001392C3 /* FGXChatController.h */,
+				184AE1571F7E22FA001392C3 /* FGXChatController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		184AE1541F7E22CF001392C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189399F51F7F69DE00ECB998 /* FGXChat.h */,
+				189399F61F7F69DE00ECB998 /* FGXChat.m */,
+				189399F81F7F6A0600ECB998 /* FGXChatFrame.h */,
+				189399F91F7F6A0600ECB998 /* FGXChatFrame.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184AE1551F7E22CF001392C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18939A021F7F6F9C00ECB998 /* XMGLongPressBtn.h */,
+				18939A031F7F6F9C00ECB998 /* XMGLongPressBtn.m */,
+				189399FE1F7F6EA700ECB998 /* FGXChatCell */,
+				189399E11F7F284F00ECB998 /* FGXChatInputBar */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1863F5401F7CDB7600C276A4 /* FMDB */ = {
@@ -283,9 +511,9 @@
 		1882D3E71F70EF13001812E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				18E4D8DA1F73B805007B863E /* Other */,
+				184AE1391F7E1922001392C3 /* Other */,
 				18B518161F72486500459E4E /* Home(map) */,
-				18B518121F72485C00459E4E /* Message */,
+				18B518121F72485C00459E4E /* Message(沟通记录) */,
 				18B5180E1F72485000459E4E /* Agent */,
 				1882D3E81F70EF13001812E3 /* LogReg */,
 				1882D3EC1F70EF13001812E3 /* Main */,
@@ -342,6 +570,12 @@
 		1882D3ED1F70EF13001812E3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				18939A051F7F6FF800ECB998 /* UIImage+YFResizing.h */,
+				18939A061F7F6FF800ECB998 /* UIImage+YFResizing.m */,
+				189399FB1F7F6CA100ECB998 /* NSString+YFTimestamp.h */,
+				189399FC1F7F6CA100ECB998 /* NSString+YFTimestamp.m */,
+				189399F21F7F35B300ECB998 /* UIResponder+Router.h */,
+				189399F31F7F35B300ECB998 /* UIResponder+Router.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -367,6 +601,7 @@
 		1882D3F01F70EF13001812E3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				189399E51F7F29A900ECB998 /* PureLayout */,
 				1863F5401F7CDB7600C276A4 /* FMDB */,
 			);
 			path = Lib;
@@ -386,6 +621,40 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		189399E11F7F284F00ECB998 /* FGXChatInputBar */ = {
+			isa = PBXGroup;
+			children = (
+				189399E21F7F288F00ECB998 /* FGXChatInputBar.h */,
+				189399E31F7F288F00ECB998 /* FGXChatInputBar.m */,
+			);
+			path = FGXChatInputBar;
+			sourceTree = "<group>";
+		};
+		189399E51F7F29A900ECB998 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				189399E61F7F29A900ECB998 /* ALView+PureLayout.h */,
+				189399E71F7F29A900ECB998 /* ALView+PureLayout.m */,
+				189399E81F7F29A900ECB998 /* NSArray+PureLayout.h */,
+				189399E91F7F29A900ECB998 /* NSArray+PureLayout.m */,
+				189399EA1F7F29A900ECB998 /* NSLayoutConstraint+PureLayout.h */,
+				189399EB1F7F29A900ECB998 /* NSLayoutConstraint+PureLayout.m */,
+				189399EC1F7F29A900ECB998 /* PureLayout+Internal.h */,
+				189399ED1F7F29A900ECB998 /* PureLayout.h */,
+				189399EE1F7F29A900ECB998 /* PureLayoutDefines.h */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		189399FE1F7F6EA700ECB998 /* FGXChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				189399FF1F7F6ED500ECB998 /* FGXChatCell.h */,
+				18939A001F7F6ED500ECB998 /* FGXChatCell.m */,
+			);
+			path = FGXChatCell;
+			sourceTree = "<group>";
+		};
 		18B5180E1F72485000459E4E /* Agent */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,8 +668,8 @@
 		18B5180F1F72485000459E4E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1863F53D1F7CD88100C276A4 /* FGXAgentController.h */,
-				1863F53E1F7CD88100C276A4 /* FGXAgentController.m */,
+				18F42D931F8B217700DA32A9 /* FGXAgentController.h */,
+				18F42D921F8B217700DA32A9 /* FGXAgentController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -408,6 +677,8 @@
 		18B518101F72485000459E4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1863F5591F7CDFAF00C276A4 /* FGXAgentModel.h */,
+				1863F55A1F7CDFAF00C276A4 /* FGXAgentModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -415,17 +686,21 @@
 		18B518111F72485000459E4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1863F55C1F7CE4D500C276A4 /* FGXAgentCell.h */,
+				1863F55D1F7CE4D500C276A4 /* FGXAgentCell.m */,
+				1863F55E1F7CE4D500C276A4 /* FGXAgentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		18B518121F72485C00459E4E /* Message */ = {
+		18B518121F72485C00459E4E /* Message(沟通记录) */ = {
 			isa = PBXGroup;
 			children = (
 				18B518131F72485C00459E4E /* Controller */,
 				18B518141F72485C00459E4E /* Model */,
 				18B518151F72485C00459E4E /* View */,
 			);
+			name = "Message(沟通记录)";
 			path = Message;
 			sourceTree = "<group>";
 		};
@@ -441,6 +716,8 @@
 		18B518141F72485C00459E4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18309F911F90551E00368C8F /* FGXMessageModel.h */,
+				18309F921F90551E00368C8F /* FGXMessageModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,6 +725,9 @@
 		18B518151F72485C00459E4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1858FC561F8F49C3006B0A76 /* FGXMessageCell.h */,
+				1858FC571F8F49C3006B0A76 /* FGXMessageCell.m */,
+				1858FC581F8F49C3006B0A76 /* FGXMessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -622,65 +902,6 @@
 			path = Perfect;
 			sourceTree = "<group>";
 		};
-		18E4D8DA1F73B805007B863E /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				18E4D8DB1F73B805007B863E /* Controller */,
-				18E4D8DC1F73B805007B863E /* Model */,
-				18E4D8DD1F73B805007B863E /* View */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		18E4D8DB1F73B805007B863E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				183E8CDD1F7B771D00D0A2C9 /* terms */,
-				18E4D8DE1F73B8AF007B863E /* AgentCertification */,
-				18E4D8DF1F73B8AF007B863E /* PhoneBinding */,
-				18E4D8E01F73B8AF007B863E /* Real-nameAuthentication */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		18E4D8DC1F73B805007B863E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		18E4D8DD1F73B805007B863E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		18E4D8DE1F73B8AF007B863E /* AgentCertification */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AgentCertification;
-			sourceTree = "<group>";
-		};
-		18E4D8DF1F73B8AF007B863E /* PhoneBinding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PhoneBinding;
-			sourceTree = "<group>";
-		};
-		18E4D8E01F73B8AF007B863E /* Real-nameAuthentication */ = {
-			isa = PBXGroup;
-			children = (
-				18E4D8E11F73BE70007B863E /* FGXRealNameAuthenticationController.h */,
-				18E4D8E21F73BE70007B863E /* FGXRealNameAuthenticationController.m */,
-				18CBF7A01F749FBB0028A0D9 /* realName.storyboard */,
-			);
-			path = "Real-nameAuthentication";
-			sourceTree = "<group>";
-		};
 		83A2776203E5544CA788CBF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -813,11 +1034,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E4D8C81F739FDB007B863E /* FGXSettingController.xib in Resources */,
-				18CBF7A11F749FBB0028A0D9 /* realName.storyboard in Resources */,
+				1863F5601F7CE4D500C276A4 /* FGXAgentCell.xib in Resources */,
 				18E4D8CF1F739FDB007B863E /* FGXPersonalInfoCell.xib in Resources */,
+				184AE1501F7E1922001392C3 /* realName.storyboard in Resources */,
 				1882D3C41F70C0BA001812E3 /* LaunchScreen.storyboard in Resources */,
 				1863F5501F7CDB7600C276A4 /* LICENSE.txt in Resources */,
 				1882D3C11F70C0BA001812E3 /* Assets.xcassets in Resources */,
+				1858FC5A1F8F49C3006B0A76 /* FGXMessageCell.xib in Resources */,
 				18E4D8CD1F739FDB007B863E /* FGXSettingCell.xib in Resources */,
 				1882D3BF1F70C0BA001812E3 /* Main.storyboard in Resources */,
 			);
@@ -893,31 +1116,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				1863F5511F7CDB7600C276A4 /* README.markdown in Sources */,
+				184AE1511F7E1922001392C3 /* FGXTermsController.m in Sources */,
 				18E4D8C91F739FDB007B863E /* FGXPersonalInfoController.m in Sources */,
 				18E4D8CE1F739FDB007B863E /* FGXPersonalInfoCell.m in Sources */,
 				1882D3BC1F70C0BA001812E3 /* ViewController.m in Sources */,
+				189399FD1F7F6CA100ECB998 /* NSString+YFTimestamp.m in Sources */,
 				1882D3B91F70C0BA001812E3 /* AppDelegate.m in Sources */,
+				1858FC591F8F49C3006B0A76 /* FGXMessageCell.m in Sources */,
 				18B5181C1F724FD500459E4E /* FGXHomeController.m in Sources */,
-				1863F53F1F7CD88100C276A4 /* FGXAgentController.m in Sources */,
 				18B518061F7246C500459E4E /* FGXTabBarController.m in Sources */,
+				189399E41F7F288F00ECB998 /* FGXChatInputBar.m in Sources */,
 				1863F5521F7CDB7600C276A4 /* FMDatabase.m in Sources */,
+				189399F41F7F35B300ECB998 /* UIResponder+Router.m in Sources */,
+				189399FA1F7F6A0600ECB998 /* FGXChatFrame.m in Sources */,
 				18E4D8CB1F739FDB007B863E /* FGXPersonalInfoModel.m in Sources */,
 				1882D3F51F70EF6E001812E3 /* LoginRegisterController.m in Sources */,
 				1882D3B61F70C0BA001812E3 /* main.m in Sources */,
 				1863F5541F7CDB7600C276A4 /* FMDatabasePool.m in Sources */,
 				18E4D8D41F73B0F2007B863E /* FGXContractController.m in Sources */,
+				18F42D941F8B217700DA32A9 /* FGXAgentController.m in Sources */,
+				189399F71F7F69DE00ECB998 /* FGXChat.m in Sources */,
+				18939A071F7F6FF800ECB998 /* UIImage+YFResizing.m in Sources */,
 				1863F53C1F7CD75E00C276A4 /* FGXMessageController.m in Sources */,
 				1863F5561F7CDB7600C276A4 /* FMResultSet.m in Sources */,
-				18E4D8E31F73BE70007B863E /* FGXRealNameAuthenticationController.m in Sources */,
-				183E8CE01F7B773F00D0A2C9 /* FGXTermsController.m in Sources */,
+				184AE1581F7E22FA001392C3 /* FGXChatController.m in Sources */,
+				189399F11F7F29A900ECB998 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				18309F931F90551E00368C8F /* FGXMessageModel.m in Sources */,
 				1863F5551F7CDB7600C276A4 /* FMDatabaseQueue.m in Sources */,
+				18939A041F7F6F9C00ECB998 /* XMGLongPressBtn.m in Sources */,
 				18B518091F7246E900459E4E /* FGXNavigationController.m in Sources */,
 				18E4D8C61F739FDB007B863E /* FGXAboutController.m in Sources */,
 				18E4D8C71F739FDB007B863E /* FGXSettingController.m in Sources */,
+				18939A011F7F6ED500ECB998 /* FGXChatCell.m in Sources */,
 				18E4D8CA1F739FDB007B863E /* FGXSettingModel.m in Sources */,
+				1863F55B1F7CDFAF00C276A4 /* FGXAgentModel.m in Sources */,
+				1863F55F1F7CE4D500C276A4 /* FGXAgentCell.m in Sources */,
 				18E4D8D81F73B1DE007B863E /* FGXProcessController.m in Sources */,
+				189399EF1F7F29A900ECB998 /* ALView+PureLayout.m in Sources */,
+				189399F01F7F29A900ECB998 /* NSArray+PureLayout.m in Sources */,
 				18E4D8CC1F739FDB007B863E /* FGXSettingCell.m in Sources */,
 				18E4D8C51F739FDB007B863E /* FGXMeController.m in Sources */,
+				184AE14F1F7E1922001392C3 /* FGXRealNameAuthenticationController.m in Sources */,
 				1863F5531F7CDB7600C276A4 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
